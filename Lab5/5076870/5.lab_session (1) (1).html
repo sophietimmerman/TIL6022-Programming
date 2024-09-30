@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h1>1. String methods</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<p>Like any programming language, Python allows many operations on strings. Finding sub-strings, splitting, joining, etc. You can find a list of the available methods <a rel="noopener" href="https://docs.python.org/3/library/stdtypes.html#string-methods">here</a>.<br/>
+<br/>
+<b>Exercise</b><br/>
+Use the appropriate methods to make the following lines of code work.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;In computer programming,  a string is traditionally  a sequence of characters.  &quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">))</span>             <span class="c1"># index of the first &#39;c&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">))</span>            <span class="c1"># index of the last &#39;c&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()))</span>         <span class="c1"># length of the string without trailing whitespaces</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;In&#39;</span><span class="p">))</span>      <span class="c1"># whether the string starts with &quot;In&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>               <span class="c1"># string as all lower-case</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">))</span>            <span class="c1"># list of parts of the sentence, split by &quot;,&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;  &#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">))</span>    <span class="c1"># all double whitespaces replaced by a single whitespace</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; traditionally&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>  <span class="c1"># without the word &quot;traditionally&quot; (beware of whitespaces)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>3
+72
+78
+True
+in computer programming,  a string is traditionally  a sequence of characters.  
+[&#39;In computer programming&#39;, &#39;  a string is traditionally  a sequence of characters.  &#39;]
+In computer programming, a string is traditionally a sequence of characters. 
+In computer programming,  a string is  a sequence of characters.  
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h1>2. String formatting
+</h1></div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<p>Formatting a string allows you to export or print data. For example, printing the string <code>Client name: %s</code> where <code>%s</code> is formatted to be the name of a client given as a string. Besides substituting strings at <code>%s</code>, other data types can also be formatted in to the string. See <a rel="noopener" href="https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting">here</a> for a list of all formatting conversions. This includes formatting/rounding numbers.<br/>
+<br/>
+A general way to format a string is given below. Note the <code>%d</code> for an integer and <code>%.2f</code> for a float with a precision of 2 decimals. In case of a single argument, the <code>( )</code> are not nessecary.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">client_name</span> <span class="o">=</span> <span class="s2">&quot;Obelix&quot;</span>
+<span class="n">client_age</span> <span class="o">=</span> <span class="mi">32</span>                                                                                 <span class="c1"># [years]</span>
+<span class="n">client_length</span> <span class="o">=</span> <span class="mf">1.8</span>                                                                             <span class="c1"># [m]</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;Client </span><span class="si">%s</span><span class="s2"> is </span><span class="si">%d</span><span class="s2"> years old and </span><span class="si">%.2f</span><span class="s2">m long.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">client_name</span><span class="p">,</span> <span class="n">client_age</span><span class="p">,</span> <span class="n">client_length</span><span class="p">)</span> <span class="c1"># the format is: string % (arguments)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Client Obelix is 32 years old and 1.80m long.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<p><b>Exercise</b><br/>
+Use the appropriate format to make the following lines of code work.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mf">1.73456</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">round</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>    <span class="c1"># 2        (see &quot;5. Precision&quot;, why can&#39;t you use %d?)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.1f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">value</span><span class="p">)</span>    <span class="c1"># 1.7      </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">value</span><span class="p">)</span>    <span class="c1"># 1.73</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%7.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">value</span><span class="p">)</span>   <span class="c1">#    1.73  (with a total length of 7, see &quot;4. Minimum field width&quot;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%07.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">value</span><span class="p">)</span>  <span class="c1"># 0001.73  (see Flag &#39;0&#39;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%+.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">value</span><span class="p">)</span>   <span class="c1"># +1.73    (see Flag &#39;+&#39;)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%+07.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">value</span><span class="p">)</span> <span class="c1"># +001.73</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2e</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">value</span><span class="p">)</span>   <span class="c1"># 1.73e+00 (exponential format)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>2
+1.7
+1.73
+   1.73
+0001.73
++1.73
++001.73
+1.73e+00
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h1>3. Regular expressions</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<p>Regular expressions are used to find patterns in text, without exactly specifying each character. For example to find words, to find numbers that were formatted in a particular way, etc.<br/>
+A single digit can for example be matched with <code>\d</code>. That would match at 4 locations in the string <code>The width of the car is 2m, and the height is 1.65m.</code>.<br/>
+Another example is that we can match a set of characters. This can be matched using <code>[xyz]</code>. That would match at 4 locations in the string <code>If x = 2y, than y = 6z.</code>.<br/>
+At <a rel="noopener" href="https://docs.python.org/3/library/re.html">Python Regular Expressions</a> more information can be found on matching string patterns in Python. Using this information, make the following assignment.<br/>
+<br/>
+<b>Exercise</b><br/>
+Open <a rel="noopener" href="https://regex101.com/">regex101.com</a>.<br/>
+On the left-hand side, select the &quot;Python&quot; flavor.<br/>
+Copy the text below in the &quot;TEST STRING&quot; box.<br/>
+In the &quot;REGULAR EXPRESSION&quot; text box, write a pattern that:</p>
+<ul>
+<li>Matches the first 10 lines with a decimal number.</li>
+<li>Does not match the integer in the 11th line.</li>
+<li>Does not match the text in the 12th line.</li>
+</ul>
+<i>Tip: Start with simple cases. For example, first make it work for either &quot;.&quot; or &quot;,&quot;, and without leading zeros. Then add these one by one.</i>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<pre><code>0001,2345
+1,2345
+1,23
+,2345
+1,
+001.2345
+1.2345
+1.23
+.2345
+1.
+1
+thisisnotanumber</code></pre>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[41]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">regexp</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;(?:(?:0|[1-9]\d*)[.,]\d+|[.,]\d+)(?!\d)|[1-9][.,]&quot;</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;0001,2345</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;1,2345</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;1,23</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;,2345</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;1,</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;001.2345</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;1.2345</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;1.23</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;.2345</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;1.</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;1</span><span class="se">\n</span><span class="s2">&quot;</span> \
+       <span class="s2">&quot;thisisnotanumber&quot;</span>
+
+<span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">regexp</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>[&#39;1,2345&#39;, &#39;1,2345&#39;, &#39;1,23&#39;, &#39;,2345&#39;, &#39;1,&#39;, &#39;1.2345&#39;, &#39;1.2345&#39;, &#39;1.23&#39;, &#39;.2345&#39;, &#39;1.&#39;]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h1>4. Counting characters</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<p><b>Exercise</b><br/>
+Print all non-zero frequencies of each character from the alphabet in the text given in the code box.</p>
+<ul>
+<li>Treat accented characters as normal characters.</li>
+<li>Combine uppercase and lowercase characters in a single count.</li>
+<li>Print in alphabetical order.</li>
+</ul>
+<i>Hint: Have one step where you prepare and filter some data, and a second step with a loop.<i><br/>
+<i>Hint: sets have unique values, and lists are indexed and can thus be sorted (sort()).<i>
+</i></i></i></i></div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[&#160;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;For the movie The Theory of Everything (2014), J&#243;hann J&#243;hannsson composed the song A Model of the Universe&quot;</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="c1"># alleen de letters worden eruit gefilterd</span>
+<span class="n">alphabetisch_text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">char</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span> <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isalpha</span><span class="p">())</span>
+
+<span class="n">frequentie</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">alphabetisch_text</span><span class="p">)</span>
+
+<span class="c1"># sorted zodat alphabet in juiste volgorde staat</span>
+<span class="n">alphabet</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">))</span>
+
+<span class="c1"># per letter wordt de frequentie geprint</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">alphabet</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">frequentie</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">char</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">frequentie</span><span class="p">[</span><span class="n">char</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        
+<span class="nb">print</span><span class="p">(</span><span class="n">alphabetisch_text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frequentie</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h1>5. Good... afternoon?</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<p>The code below generates a random time in the day. Suppose we want to present a user a welcoming message when the user opens a program at that time.<br/>
+<br/>
+<b>Exercise</b><br/></p>
+<ul>
+<li>Print a message with the (pseudo) format: Good {part of day}, the time is hh:mm</li>
+<li>Parts of the day are night [0-5], morning [6-11], afternoon [12-17] or evening [18-23].</li>
+<li>Hour or minute values below 10 should have a leading 0.</li>
+</ul>
+<i>Hint: you can use if-elif-else for the part of the day, but you can also have a fixed list of parts of the day and use clever indexing from the hour value.</i>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span> <span class="c1"># hour of the day</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">59</span><span class="p">)</span> <span class="c1"># minute in the hour</span>
+
+<span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">h</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">part_of_day</span> <span class="o">=</span> <span class="s2">&quot;night&quot;</span>
+<span class="k">elif</span> <span class="mi">6</span> <span class="o">&lt;=</span> <span class="n">h</span> <span class="o">&lt;=</span> <span class="mi">11</span><span class="p">:</span>
+    <span class="n">part_of_day</span> <span class="o">=</span> <span class="s2">&quot;morning&quot;</span>
+<span class="k">elif</span> <span class="mi">12</span> <span class="o">&lt;=</span> <span class="n">h</span> <span class="o">&lt;=</span> <span class="mi">17</span><span class="p">:</span>
+    <span class="n">part_of_day</span> <span class="o">=</span> <span class="s2">&quot;afternoon&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">part_of_day</span> <span class="o">=</span> <span class="s2">&quot;evening&quot;</span>
+
+<span class="n">hour</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">h</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="n">minute</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Good </span><span class="si">{</span><span class="n">part_of_day</span><span class="si">}</span><span class="s2">, the time is </span><span class="si">{</span><span class="n">hour</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">minute</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Good night, the time is 05:51
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2024.8.194/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+						if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+							document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+								elm.setAttribute('style', 'display: block; height: 0.5rem;');
+							});
+
+							window.D2L.MathJax.loadMathJax({
+								outputScale: 1.5,
+								renderLatex: true,
+								enableMML3Support: false
+							});
+						}
+					});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2024.8.194/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2024.8.194/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
